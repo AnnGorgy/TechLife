@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F6BA6E98-6DEF-4CA8-9035-668DEF4FFB83}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UIProject</RootNamespace>
+    <AssemblyName>UIProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44319</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Images\Gaming\PS4\Battle Zone.jpg" />
+    <Content Include="Images\Gaming\PS4\Code Vein.jpg" />
+    <Content Include="Images\Gaming\PS4\Contra Rogue Corps.jpg" />
+    <Content Include="Images\Gaming\PS4\eFootball Pro Evolution Soccer 2020.jpg" />
+    <Content Include="Images\Gaming\PS4\Ni No Kuni- Wrath of the White Witch Remastered.jpg" />
+    <Content Include="Images\Gaming\PS4\Samurai Shodown.jpg" />
+    <Content Include="Images\Gaming\PS4\Surge 2.jpg" />
+    <Content Include="Images\Gaming\PS4\Tom Clancys Ghost Recon Breakpoint - Auroa Edition.jpg" />
+    <Content Include="Images\Gaming\XBOX\Devil May Cry 5 - Standard Edition.jpg" />
+    <Content Include="Images\Gaming\XBOX\Fifa 20.jpg" />
+    <Content Include="Images\Gaming\XBOX\Forza 7 Motorsport Ultimate Edition.jpg" />
+    <Content Include="Images\Gaming\XBOX\Gears of War 5.jpg" />
+    <Content Include="Images\Gaming\XBOX\Need For Speed-Heat.jpg" />
+    <Content Include="Images\Gaming\XBOX\Plant vs Zombies Battle for Neighborville.jpg" />
+    <Content Include="Images\Home\MB-ksa-2204-dell-g3-laptop-en.jpg" />
+    <Content Include="Images\Home\MB-ksa-2204-microsoft-365-en.jpg" />
+    <Content Include="Images\Home\MB-ksa-2304-final-fantasy-game-new-en.jpg" />
+    <Content Include="Images\Home\MB-ksa-2304-hp-omen-15-dc1057nr-en1.jpg" />
+    <Content Include="Images\Home\MB-ksa-2304-wacom-prodcuts-en.jpg" />
+    <Content Include="Images\Home\MB-ksa-2304-work-from-home-huawei-en.jpg" />
+    <Content Include="Images\Home\MB-ksa-2404-iphone-se-arvl-en %281%29.jpg" />
+    <Content Include="Images\Home\MB-ksa-2404-iphone11-cb-en.jpg" />
+    <Content Include="Images\Home\MB-ksa-2404-ramadhan-offers-en.jpg" />
+    <Content Include="Images\Home\MB-ksa-2604-hyperx-gaming-acc-en.jpg" />
+    <Content Include="Images\Home\MB-ksa-2604-ring-prodcuts-cb-en.jpg" />
+    <Content Include="Images\Home\sub-banner-for-web-en-12.jpg" />
+    <Content Include="Images\Home\sub-banner-for-web-en-16.jpg" />
+    <Content Include="Images\Home\sub-banner-for-web-en-19.jpg" />
+    <Content Include="Images\Home\sub-banner-for-web-en-24.jpg" />
+    <Content Include="Images\Home\sub-banner-for-web-en-25.jpg" />
+    <Content Include="Images\Home\sub-banner-for-web-en-26.jpg" />
+    <Content Include="Images\Home\sub-banner-for-web-en-5 %281%29.jpg" />
+    <Content Include="Images\Home\sub-banner-for-web-en-6.jpg" />
+    <Content Include="Images\Home\sub-banner-for-web-en-8.jpg" />
+    <Content Include="Images\Home\sub-banner-for-web-en-9.jpg" />
+    <Content Include="Images\Logo.png" />
+    <Content Include="Images\Mobiles\Iphone\11 Pro .jpg" />
+    <Content Include="Images\Mobiles\Iphone\Apple iPhone 11 Pro Max.jpg" />
+    <Content Include="Images\Mobiles\Iphone\Apple iPhone SE %282%29.jpg" />
+    <Content Include="Images\Mobiles\Iphone\Apple iPhone SE %283%29.jpg" />
+    <Content Include="Images\Mobiles\Iphone\Apple iPhone SE.jpg" />
+    <Content Include="Images\Mobiles\Iphone\Apple iPhone X.jpg" />
+    <Content Include="Images\Mobiles\Iphone\Apple iPhone XR.jpg" />
+    <Content Include="Images\Mobiles\Samsung\Samsung Galaxy Note9.jpg" />
+    <Content Include="Images\Mobiles\Samsung\Samsung Galaxy S10+ %28Dual%29 %282%29.jpg" />
+    <Content Include="Images\Mobiles\Samsung\Samsung Galaxy S10+ %28Dual%29.jpg" />
+    <Content Include="Images\Mobiles\Samsung\Samsung Galaxy S20 Ultra.jpg" />
+    <Content Include="Images\Mobiles\Samsung\Samsung Galaxy S20+ %282%29.jpg" />
+    <Content Include="Images\Mobiles\Samsung\Samsung Galaxy S20+ %283%29.jpg" />
+    <Content Include="Images\Mobiles\Samsung\Samsung Galaxy S20+.jpg" />
+    <Content Include="Images\Mobiles\Samsung\Samsung-Galaxy-Z-Flip %282%29.jpg" />
+    <Content Include="Images\Mobiles\Samsung\Samsung-Galaxy-Z-Flip.jpg" />
+    <Content Include="Images\Smarttvs\Hisense H65B7100 65-4K Ultra HD DLED Smart TV.jpg" />
+    <Content Include="Images\Smarttvs\LG 65UM7340PVA 65-4K Ultra HD LED Smart TV.jpg" />
+    <Content Include="Images\Smarttvs\Samsung Q60R 55-4K Ultra HD QLED %28Quantum-dot%29 Smart TV.jpg" />
+    <Content Include="Images\Smarttvs\Samsung UA55 55-4K Ultra HD LED Smart TV.jpg" />
+    <Content Include="Images\Smartwatches\Apple Watch Sport Series 5 Smartwatch.jpg" />
+    <Content Include="Images\Smartwatches\Fitbit Versa 2 Smartwatch %282%29.jpg" />
+    <Content Include="Images\Smartwatches\Fitbit Versa 2 Smartwatch.jpg" />
+    <Content Include="Images\Smartwatches\Fitbit Versa Lite Smartwatch %282%29.jpg" />
+    <Content Include="Images\Smartwatches\Fitbit Versa Lite Smartwatch.jpg" />
+    <Content Include="Images\Smartwatches\Huawei Watch GT 2 Sport Smartwatch.jpg" />
+    <Content Include="Images\Smartwatches\Samsung Galaxy Fit e%282%29.jpg" />
+    <Content Include="Images\Smartwatches\Samsung Galaxy Fit e.jpg" />
+    <Content Include="Images\Smartwatches\Samsung Galaxy Watch Smartwatch %282%29.jpg" />
+    <Content Include="Images\Smartwatches\Samsung Galaxy Watch Smartwatch.jpg" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Images\Home\MB-ksa-2604-hp-ink-en.webp" />
+    <Content Include="Images\Home\sub-banner-for-web-en-5.webp" />
+    <Content Include="Images\Mobiles\Iphone\11 Pro .webp" />
+    <Content Include="Images\Mobiles\Iphone\iphone 11.webp" />
+    <Content Include="Images\Mobiles\Iphone\iphone-6.webp" />
+    <Content Include="Images\Mobiles\Iphone\iphone-7.webp" />
+    <Content Include="Images\Mobiles\Iphone\iphone-8.webp" />
+    <Content Include="Images\Mobiles\Iphone\iphone-se.webp" />
+    <Content Include="Images\Mobiles\Iphone\iphone-x.webp" />
+    <Content Include="Images\Mobiles\Iphone\iphonexr.webp" />
+    <Content Include="Images\Mobiles\Iphone\iphonexs.webp" />
+    <Content Include="Images\Home\sub-banner-for-web-en-16.webp" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Homepage.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56090</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44319/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
