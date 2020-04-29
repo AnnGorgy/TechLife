@@ -1,7 +1,94 @@
-﻿@{
-    ViewBag.Title = "About";
-}
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+﻿
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                About TechLife
+                            </button>
+                        </h5>
+                    </div>
 
-<p>Use this area to provide additional information.</p>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            TechLife's main target is to connect you with your favourite Electronic Devices. Making the purchase of any item much easier as you can compare items from different displays just in the matter of seconds, deciding to own the ones suitale for you.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Frequently Asked Questions
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="media">
+                                <img class="align-self-start mr-3" src="~/Images/Customers/person1.jpg" alt="Generic placeholder image" style="height:50px;width:50px;">
+                                <div class="media-body">
+                                    <h5 class="mt-0" style="margin-right:860px;">Martin Bing</h5>
+                                    How can I view the available offers?
+                                    <div class="align-self-center media mt-3">
+                                        <a class="pr-3" href="#">
+                                            <img src="~/Images/TechLife.png" alt="Generic placeholder image" style="height:50px;width:50px;">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5 class="mt-0" style="margin-right:850px;">TechLife</h5>
+                                            In the displays page you can view all our avaiable offers
+                                            Hope this helps :)
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <img class="align-self-start mr-3" src="~/Images/Customers/person2.jpg" alt="Generic placeholder image" style="height:50px;width:50px;">
+                                <div class="media-body">
+                                    <h5 class="mt-0" style="margin-right:850px;">Olivia Clark</h5>
+                                    I dont seem to know how to add items to my cart
+                                    <div class="align-self-center media mt-3">
+                                        <a class="pr-3" href="#">
+                                            <img src="~/Images/TechLife.png" alt="Generic placeholder image" style="height:50px;width:50px;">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5 class="mt-0" style="margin-right:850px;">TechLife</h5>
+                                            First, choose the display you want to purchase the item from
+                                            Second, choose the item you want to purchase
+                                            finally, below each item there is an add to cart button that you can click to add the item to your cart repeat the process to fill the cart with all your favourite items
+                                            Hope this helps :)
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <img class="align-self-start mr-3" src="~/Images/Customers/person3.jpg" alt="Generic placeholder image" style="height:50px;width:50px;">
+                                <div class="media-body">
+                                    <h5 class="mt-0" style="margin-right:830px;">Henry Williams</h5>
+                                    I forgot my password and all i can do is register again but it keeps telling me that the username is already registered
+                                    what can i do as i need to track my latest order?
+                                    will registering again with a different username cause me losing my latest order
+                                    will i have to re-order again?
+                                    <div class="align-self-center media mt-3">
+                                        <a class="pr-3" href="#">
+                                            <img src="~/Images/TechLife.png" alt="Generic placeholder image" style="height:50px;width:50px;">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5 class="mt-0" style="margin-right:850px;">TechLife</h5>
+                                            Actually there is no need to go through all that trouble,
+                                            just send us an email on TechLifehelp@gmail.com requesting your password and after making sure that you are the owner of this account, you will recieve a reply with your password.
+                                            Hope this helps :)
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -135,6 +135,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\Customers\person1.jpg" />
+    <Content Include="Images\Customers\person2.jpg" />
+    <Content Include="Images\Customers\person3.jpg" />
     <Content Include="Images\Gaming\PS4\Battle Zone.jpg" />
     <Content Include="Images\Gaming\PS4\Code Vein.jpg" />
     <Content Include="Images\Gaming\PS4\Contra Rogue Corps.jpg" />
@@ -201,6 +204,7 @@
     <Content Include="Images\Smartwatches\Samsung Galaxy Fit e.jpg" />
     <Content Include="Images\Smartwatches\Samsung Galaxy Watch Smartwatch %282%29.jpg" />
     <Content Include="Images\Smartwatches\Samsung Galaxy Watch Smartwatch.jpg" />
+    <Content Include="Images\TechLife.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Images\Home\MB-ksa-2604-hp-ink-en.webp" />
@@ -241,6 +245,9 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Homepage.cshtml" />
+    <Content Include="Views\Home\SmartWatch.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Home\SmartWatchess2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
