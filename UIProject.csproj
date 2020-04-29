@@ -121,6 +121,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\IdentityController.cs" />
+    <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -245,9 +247,16 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Homepage.cshtml" />
-    <Content Include="Views\Home\SmartWatch.cshtml" />
-    <Content Include="Views\Home\Login.cshtml" />
-    <Content Include="Views\Home\SmartWatchess2.cshtml" />
+    <Content Include="Views\Products\Smartwatches.cshtml">
+      <BrowseToURL>~/Products/SmartWatches</BrowseToURL>
+    </Content>
+    <Content Include="Views\Products\SmartwatchesPage2.cshtml">
+      <BrowseToURL>~/Products/SmartWatchesPage2</BrowseToURL>
+    </Content>
+    <Content Include="Views\Shared\_Partiallogin.cshtml" />
+    <Content Include="Views\Identity\login.cshtml">
+      <BrowseToURL>~/login</BrowseToURL>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
