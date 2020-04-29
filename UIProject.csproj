@@ -137,6 +137,15 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\Computers\Gaming Laptops\HP OMEN 17-an101nx Gaming Laptop.jpg" />
+    <Content Include="Images\Computers\Gaming Laptops\MSI GT75 Titan 8SG Gaming Laptop.jpg" />
+    <Content Include="Images\Computers\Gaming Laptops\Razer Blade 15 Gaming Laptop.jpg" />
+    <Content Include="Images\Computers\Laptops\Apple MacBook Pro %28Retina - Touch Bar%29 Laptop.jpg" />
+    <Content Include="Images\Computers\Laptops\Asus ZenBook S13 UX392FN Laptop.jpg" />
+    <Content Include="Images\Computers\Laptops\Dell Inspiron 14 7490 Laptop.jpg" />
+    <Content Include="Images\Computers\Laptops\HP 15s-eq0001nx Laptop.jpg" />
+    <Content Include="Images\Computers\Laptops\Huawei MateBook D Laptop.jpg" />
+    <Content Include="Images\Computers\Laptops\Lenovo IdeaPad S340-14IIL Laptop.jpg" />
     <Content Include="Images\Customers\person1.jpg" />
     <Content Include="Images\Customers\person2.jpg" />
     <Content Include="Images\Customers\person3.jpg" />
@@ -178,18 +187,22 @@
     <Content Include="Images\Logo.png" />
     <Content Include="Images\Mobiles\Iphone\11 Pro .jpg" />
     <Content Include="Images\Mobiles\Iphone\Apple iPhone 11 Pro Max.jpg" />
+    <Content Include="Images\Mobiles\Iphone\Apple iPhone 11 Pro.jpg" />
+    <Content Include="Images\Mobiles\Iphone\Apple iPhone 11.jpg" />
+    <Content Include="Images\Mobiles\Iphone\Apple iPhone 8 Plus.jpg" />
     <Content Include="Images\Mobiles\Iphone\Apple iPhone SE %282%29.jpg" />
     <Content Include="Images\Mobiles\Iphone\Apple iPhone SE %283%29.jpg" />
     <Content Include="Images\Mobiles\Iphone\Apple iPhone SE.jpg" />
     <Content Include="Images\Mobiles\Iphone\Apple iPhone X.jpg" />
     <Content Include="Images\Mobiles\Iphone\Apple iPhone XR.jpg" />
+    <Content Include="Images\Mobiles\Iphone\Apple iPhone Xs Max.jpg" />
+    <Content Include="Images\Mobiles\Samsung\Samsung Galaxy Note10Plus %285G%29.jpg" />
     <Content Include="Images\Mobiles\Samsung\Samsung Galaxy Note9.jpg" />
-    <Content Include="Images\Mobiles\Samsung\Samsung Galaxy S10+ %28Dual%29 %282%29.jpg" />
-    <Content Include="Images\Mobiles\Samsung\Samsung Galaxy S10+ %28Dual%29.jpg" />
+    <Content Include="Images\Mobiles\Samsung\Samsung Galaxy S10Plus %28Dual%29 %282%29.jpg" />
+    <Content Include="Images\Mobiles\Samsung\Samsung Galaxy S10Plus %28Dual%29.jpg" />
     <Content Include="Images\Mobiles\Samsung\Samsung Galaxy S20 Ultra.jpg" />
-    <Content Include="Images\Mobiles\Samsung\Samsung Galaxy S20+ %282%29.jpg" />
-    <Content Include="Images\Mobiles\Samsung\Samsung Galaxy S20+ %283%29.jpg" />
-    <Content Include="Images\Mobiles\Samsung\Samsung Galaxy S20+.jpg" />
+    <Content Include="Images\Mobiles\Samsung\Samsung Galaxy S20 %282%29.jpg" />
+    <Content Include="Images\Mobiles\Samsung\Samsung Galaxy S20plus.jpg" />
     <Content Include="Images\Mobiles\Samsung\Samsung-Galaxy-Z-Flip %282%29.jpg" />
     <Content Include="Images\Mobiles\Samsung\Samsung-Galaxy-Z-Flip.jpg" />
     <Content Include="Images\Smarttvs\Hisense H65B7100 65-4K Ultra HD DLED Smart TV.jpg" />
@@ -251,11 +264,37 @@
       <BrowseToURL>~/Products/SmartWatches</BrowseToURL>
     </Content>
     <Content Include="Views\Products\SmartwatchesPage2.cshtml">
-      <BrowseToURL>~/Products/SmartWatchesPage2</BrowseToURL>
+      <BrowseToURL>~/Products/SmartwatchesPage2</BrowseToURL>
     </Content>
     <Content Include="Views\Shared\_Partiallogin.cshtml" />
     <Content Include="Views\Identity\login.cshtml">
       <BrowseToURL>~/login</BrowseToURL>
+    </Content>
+    <Content Include="Views\Products\SmartTelevisions.cshtml" />
+    <Content Include="Views\Products\PS4.cshtml">
+      <BrowseToURL>~/Products/VideoGames/PS4</BrowseToURL>
+    </Content>
+    <Content Include="Views\Products\PS4Page2.cshtml">
+      <BrowseToURL>~/Products/VideoGames/PS4Page2</BrowseToURL>
+    </Content>
+    <Content Include="Views\Products\XBOX.cshtml">
+      <BrowseToURL>~/Products/VideoGames/XBOX</BrowseToURL>
+    </Content>
+    <Content Include="Views\Products\XBOXPage2.cshtml">
+      <BrowseToURL>~/Products/VideoGames/XBOXPage2</BrowseToURL>
+    </Content>
+    <Content Include="Views\Products\GamingLaptops.cshtml">
+      <BrowseToURL>~/Products/Computers/GamingLaptops</BrowseToURL>
+    </Content>
+    <Content Include="Views\Products\Laptops.cshtml">
+      <BrowseToURL>~/Products/Computers/Laptops</BrowseToURL>
+    </Content>
+    <Content Include="Views\Products\LaptopsPage2.cshtml" />
+    <Content Include="Views\Products\AppleIphone.cshtml">
+      <BrowseToURL>~/Products/MobilePhones/AppleIphone</BrowseToURL>
+    </Content>
+    <Content Include="Views\Products\Samsung.cshtml">
+      <BrowseToURL>~/Products/MobilePhones/Samsung</BrowseToURL>
     </Content>
   </ItemGroup>
   <ItemGroup>
