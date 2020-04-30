@@ -2,13 +2,13 @@
 
 
 
-    @*<button type="button" class="btn btn-lg btn-danger" style="margin-bottom:50px;" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>*@
+    <button type="button" class="btn btn-lg btn-danger" style="margin-bottom:50px;" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
 
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
                 <ul class="breadcrumb" style="margin-top:-10px;height:43px;">
-                   
+
                     <li><a href="http://localhost:44319/Products">  Products </a></li>/
                     <li><a href="http://localhost:44319/Computers">  Mobile Phones </a></li>
                     /
@@ -253,10 +253,20 @@
             <li class="page-item"><a class="page-link" href="#">Next</a></li>
         </ul>
     </nav>
-
+    @*<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+                crossorigin="anonymous"></script>*@
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="~/bootstrap.bundle.min.js"></script>
+    <script src="~/bootstrap.min.js"></script>
     <script>
-        jQuery(function () {
-            jQuery('[data-toggle="popover"]').popover()
-        })
+        $(function () {
+            $('[data-toggle="popover"]').popover();
+        });
     </script>
 </body>

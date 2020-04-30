@@ -2052,7 +2052,7 @@ if (typeof jQuery === 'undefined') {
 
   Popover.prototype.arrow = function () {
     return (this.$arrow = this.$arrow || this.tip().find('.arrow'))
-  }
+    }
 
 
   // POPOVER PLUGIN DEFINITION

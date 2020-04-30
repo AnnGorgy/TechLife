@@ -3,11 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="~/bootstrap.bundle.min.js"></script>
-    <script src="~/bootstrap.min.js"></script>
+    
     <link href="~/bootstrap.min.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title TechLife</title>
@@ -17,6 +13,7 @@
     <style>
       
         #link:hover {
+
           background-color:lightgrey;
           color:#bb495a;
         
@@ -27,90 +24,106 @@
 </head>
 
 <body>
-    <div id="wrap">
-        <div class="container-fluid " style="z-index:-1;">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12" >
-                    <nav class="navbar navbar-expand-lg  nav-justified">
-                        
-                        <div class="collapse navbar-collapse" id="main_nav">
-                           <img src="~/Images/Logo.png" style="width:80px;height:80px;">
-                           <ul class="navbar-nav  nav-justified" style="width:1300px;height:46px; background-color:#083b66;margin-top:22px;">
 
-                               <li class="nav-item ">
-                                   <a class="nav-link " href="https://localhost:44319" id="link" data-toggle="tooltip" title="Return to Home!" style="font-weight: bold; font-size:20px; color: white">Home @*<img src="~/Images/Home.png" style="width:50px;height:28px;float:left;padding-left:2px;" />*@</a>
-                               </li>
+    <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler navbar-toggler-right" style="color:black;" type="button" data-toggle="collapse" data-target="#main_nav">
+            &#9776;
+        </button>
+        <div class="collapse navbar-collapse" id="main_nav">
+            <img src="~/Images/Logo.png" style="width:80px;height:80px;">
+            <ul class="navbar-nav  nav-justified" style="width:1300px;height:46px;margin-top:22px;">
 
-                               <li class="nav-item" style="font-weight: bold; font-size:20px;">
+                <li class="nav-item ">
+                    <a class="nav-link " href="https://localhost:44319" id="link" data-toggle="tooltip" title="Return to Home!" style="font-weight: bold; font-size:20px; color: Black">Home @*<img src="~/Images/Home.png" style="width:50px;height:28px;float:left;padding-left:2px;" />*@</a>
+                </li>
 
-                                   <a class="nav-link" href="https://localhost:44319/Home/cart" style="color:white;" id="link">Cart <img src="~/Images/cart2.png" style="        width: 50px;
+                <li class="nav-item" style="font-weight: bold; font-size:20px;">
+
+                    <a class="nav-link" href="https://localhost:44319/Home/cart" style="color:Black;" id="link">
+                        Cart <img src="~/Images/cart2.png" style="        width: 50px;
         height: 35px;
         float: left;
         padding-left: 2px;
-" /><span class="badge badge-light"></span></a>
-                               </li>
+" /><span class="badge badge-light"></span>
+                    </a>
+                </li>
 
 
 
-                               <li class="nav-item" style="font-weight: bold; font-size:20px;">
-                                   <a class="nav-link" href="https://localhost:44319/Home/About" style="color:white" id="link"> About <img src="~/Images/About.png" style="width:50px;height:35px;float:left;padding-left:2px;" /> <span class="badge badge-light"></span></a>
-                               </li>
-                               <li class="nav-item dropdown  " style="font-weight: bold;font-size:20px;">
-                                   <a class="nav-link dropdown-toggle" href="#" style="color:white" data-toggle="dropdown" id="link">  Products <img src="~/Images/Products.png" style="width:50px;height:35px;float:left;padding-left:2px;" />  </a>
-                                   <ul class="dropdown-menu ">
-                                       <li><a class="dropdown-item" href="https://localhost:44319/Products/SmartTelevisions"> Smart Televisions</a></li>
-                                       <li> <a class="dropdown-item" href="https://localhost:44319/Products/SmartWatches"> Smart Watches </a></li>
-                                       <li>
-                                           <a class="dropdown-item" href="#"> Computers > </a>
-                                           <ul class="submenu dropdown-menu">
-                                               <li><a class="dropdown-item" href="https://localhost:44319/Products/Computers/Laptops"> Laptops</a></li>
-                                               <li><a class="dropdown-item" href="https://localhost:44319/Products/Computers/GamingLaptops"> Gaming Laptops</a></li>
+                <li class="nav-item" style="font-weight: bold; font-size:20px;">
+                    <a class="nav-link" href="https://localhost:44319/Home/About" style="color:Black" id="link"> About <img src="~/Images/About.png" style="width:50px;height:35px;float:left;padding-left:2px;" /> <span class="badge badge-light"></span></a>
+                </li>
+                <li class="nav-item dropdown  " style="font-weight: bold;font-size:20px;">
+                    <a class="nav-link dropdown-toggle" href="#" style="color:Black" data-toggle="dropdown" id="link">  Products <img src="~/Images/Products.png" style="width:50px;height:35px;float:left;padding-left:2px;" />  </a>
+                    <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item" href="https://localhost:44319/Products/SmartTelevisions"> Smart Televisions</a></li>
+                        <li> <a class="dropdown-item" href="https://localhost:44319/Products/SmartWatches"> Smart Watches </a></li>
+                        <li>
+                            <a class="dropdown-item" href="#"> Computers > </a>
+                            <ul class="submenu dropdown-menu">
+                                <li><a class="dropdown-item" href="https://localhost:44319/Products/Computers/Laptops"> Laptops</a></li>
+                                <li><a class="dropdown-item" href="https://localhost:44319/Products/Computers/GamingLaptops"> Gaming Laptops</a></li>
 
-                                           </ul>
-                                       </li>
+                            </ul>
+                        </li>
 
-                                       <li>
-                                           <a class="dropdown-item" href="#"> Mobile Phones > </a>
-                                           <ul class="submenu dropdown-menu">
-                                               <li><a class="dropdown-item" href="https://localhost:44319/Products/MobilePhones/AppleIphone">Apple Iphone</a></li>
-                                               <li><a class="dropdown-item" href="https://localhost:44319/Products/MobilePhones/Samsung"> Samsung</a></li>
+                        <li>
+                            <a class="dropdown-item" href="#"> Mobile Phones > </a>
+                            <ul class="submenu dropdown-menu">
+                                <li><a class="dropdown-item" href="https://localhost:44319/Products/MobilePhones/AppleIphone">Apple Iphone</a></li>
+                                <li><a class="dropdown-item" href="https://localhost:44319/Products/MobilePhones/Samsung"> Samsung</a></li>
 
-                                           </ul>
-                                       </li>
-                                       <li>
-                                           <a class="dropdown-item" href="#">Video Games > </a>
-                                           <ul class="submenu dropdown-menu">
-                                               <li><a class="dropdown-item" href="https://localhost:44319/Products/VideoGames/PS4">PS4</a></li>
-                                               <li><a class="dropdown-item" href="https://localhost:44319/Products/VideoGames/XBOX"> XBOX One</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Video Games > </a>
+                            <ul class="submenu dropdown-menu">
+                                <li><a class="dropdown-item" href="https://localhost:44319/Products/VideoGames/PS4">PS4</a></li>
+                                <li><a class="dropdown-item" href="https://localhost:44319/Products/VideoGames/XBOX"> XBOX One</a></li>
 
-                                           </ul>
-                                       </li>
+                            </ul>
+                        </li>
 
-                                   </ul>
-                               </li>
-                               <li class="nav-item" style="font-weight: bold;font-size:20px;">
-                                   <a class="nav-link" href="https://localhost:44319/login" style="color:white" id="link">Login <img src="~/Images/Login.png" style="width:50px;height:35px;float:left;padding-left:2px;" /> </a>
-                               </li>
-                           </ul>
+                    </ul>
+                </li>
+                <li class="nav-item" style="font-weight: bold;font-size:20px;">
+                    <a class="nav-link" href="https://localhost:44319/login" style="color:Black" id="link">Login <img src="~/Images/Login.png" style="width:50px;height:35px;float:left;padding-left:2px;" /> </a>
+                </li>
+            </ul>
 
-                        </div>
-                    </nav>
-
-                </div>
-            </div>
         </div>
+    </nav>
+
+    <script>
+        $(document).on('click', '.dropdown-menu', function (e) {
+            e.stopPropagation();
+        });
+
+        // make it as accordion for smaller screens
+        if ($(window).width() < 992) {
+            $('.dropdown-menu a').click(function (e) {
+                e.preventDefault();
+                if ($(this).next('.submenu').length) {
+                    $(this).next('.submenu').toggle();
+                }
+                $('.dropdown').on('hide.bs.dropdown', function () {
+                    $(this).find('.submenu').hide();
+                })
+            });
+        }
+    </script>
+
+    <div class="container body-content">
+        @RenderBody()
+        @*<hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            </footer>*@
     </div>
-
-                    <div class="container body-content">
-                        @RenderBody()
-                        @*<hr />
-                            <footer>
-                                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-                            </footer>*@
-                    </div>
-
-                    @Scripts.Render("~/bundles/jquery")
-                    @Scripts.Render("~/bundles/bootstrap")
-                    @RenderSection("scripts", required: false)
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="~/bootstrap.bundle.min.js"></script>
+    <script src="~/bootstrap.min.js"></script>
 </body>
 </html>
