@@ -12,6 +12,11 @@ namespace UIProject
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
             routes.MapRoute(
+               name: "ann1",
+               url: "gp/ann",
+               defaults: new { controller = "Hadil", action = "ann1" }
+           );
+            routes.MapRoute(
                 name: "Smartwatches",
                 url: "Products/SmartWatches",
                 defaults: new { controller = "Products", action = "Smartwatches" }
@@ -67,18 +72,33 @@ defaults: new { controller = "Products", action = "Laptops" }
     defaults: new { controller = "Products", action = "AppleIphone" }
     );
             routes.MapRoute(
+   name: "AppleIphone2",
+   url: "Products/MobilePhones/AppleIphone2",
+   defaults: new { controller = "Products", action = "AppleIphone2" }
+   );
+
+            routes.MapRoute(
     name: "Samsung",
     url: "Products/MobilePhones/Samsung",
     defaults: new { controller = "Products", action = "Samsung" }
     );
 
+            routes.MapRoute(
+  name: "Samsung2",
+  url: "Products/MobilePhones/Samsung2",
+  defaults: new { controller = "Products", action = "Samsung2" }
+  );
 
-
+            routes.MapRoute(
+               name: "About",
+               url: "Home/About",
+               defaults: new { controller = "Home", action = "About" }
+           );
 
 
             routes.MapRoute(
                name: "login",
-               url: "Login",
+               url: "login",
                defaults: new { controller = "Identity", action = "login" }
            );
             routes.MapRoute(

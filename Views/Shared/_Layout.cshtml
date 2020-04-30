@@ -17,7 +17,9 @@
     <style>
       
         #link:hover {
-            background-color: #bb495a;
+          background-color:lightgrey;
+          color:#bb495a;
+        
         }
        
       
@@ -32,30 +34,32 @@
                     <nav class="navbar navbar-expand-lg  nav-justified">
                         
                         <div class="collapse navbar-collapse" id="main_nav">
-                           <img src="~/Images/Logo.png" style="width:80px;height:80px">
-                           <ul class="navbar-nav  nav-justified" style="width:1300px;background-color:#083b66;">
+                           <img src="~/Images/Logo.png" style="width:80px;height:80px;">
+                           <ul class="navbar-nav  nav-justified" style="width:1300px;height:46px; background-color:#083b66;margin-top:22px;">
 
                                <li class="nav-item ">
-                                   <a class="nav-link " href="https://localhost:44319" data-toggle="tooltip" title="Return to Home!" style="font-weight: bold; font-size:14px; color: white;
-    background-color: #bb495a;">Home</a>
+                                   <a class="nav-link " href="https://localhost:44319" id="link" data-toggle="tooltip" title="Return to Home!" style="font-weight: bold; font-size:20px; color: white">Home @*<img src="~/Images/Home.png" style="width:50px;height:28px;float:left;padding-left:2px;" />*@</a>
                                </li>
 
-                               <li class="nav-item" style="font-weight: bold; font-size:14px;">
-                                   <a class="nav-link" href="https://localhost:44319/Home/cart" style="color:white" id="link">Cart <span class="badge badge-light"></span></a>
+                               <li class="nav-item" style="font-weight: bold; font-size:20px;">
+
+                                   <a class="nav-link" href="https://localhost:44319/Home/cart" style="color:white;" id="link">Cart <img src="~/Images/cart2.png" style="        width: 50px;
+        height: 35px;
+        float: left;
+        padding-left: 2px;
+" /><span class="badge badge-light"></span></a>
                                </li>
 
 
-                               <li class="nav-item" style="font-weight: bold;font-size:14px;">
-                                   <a class="nav-link" href="https://localhost:44319/Home/Login" style="color:white" id="link">Login</a>
+
+                               <li class="nav-item" style="font-weight: bold; font-size:20px;">
+                                   <a class="nav-link" href="https://localhost:44319/Home/About" style="color:white" id="link"> About <img src="~/Images/About.png" style="width:50px;height:35px;float:left;padding-left:2px;" /> <span class="badge badge-light"></span></a>
                                </li>
-                               <li class="nav-item" style="font-weight: bold; font-size:14px;">
-                                   <a class="nav-link" href="https://localhost:44319/Home/About" style="color:white" id="link">About <span class="badge badge-light"></span></a>
-                               </li>
-                               <li class="nav-item dropdown  " style="font-weight: bold;font-size:14px;">
-                                   <a class="nav-link dropdown-toggle" href="#" style="color:white" data-toggle="dropdown">  Products  </a>
+                               <li class="nav-item dropdown  " style="font-weight: bold;font-size:20px;">
+                                   <a class="nav-link dropdown-toggle" href="#" style="color:white" data-toggle="dropdown" id="link">  Products <img src="~/Images/Products.png" style="width:50px;height:35px;float:left;padding-left:2px;" />  </a>
                                    <ul class="dropdown-menu ">
                                        <li><a class="dropdown-item" href="https://localhost:44319/Products/SmartTelevisions"> Smart Televisions</a></li>
-                                       <li> <a class="dropdown-item"href="https://localhost:44319/Products/SmartWatches"> Smart Watches </a></li>
+                                       <li> <a class="dropdown-item" href="https://localhost:44319/Products/SmartWatches"> Smart Watches </a></li>
                                        <li>
                                            <a class="dropdown-item" href="#"> Computers > </a>
                                            <ul class="submenu dropdown-menu">
@@ -84,7 +88,9 @@
 
                                    </ul>
                                </li>
-
+                               <li class="nav-item" style="font-weight: bold;font-size:20px;">
+                                   <a class="nav-link" href="https://localhost:44319/login" style="color:white" id="link">Login <img src="~/Images/Login.png" style="width:50px;height:35px;float:left;padding-left:2px;" /> </a>
+                               </li>
                            </ul>
 
                         </div>

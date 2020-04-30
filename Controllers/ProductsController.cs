@@ -53,7 +53,15 @@ namespace UIProject.Controllers
         {
             return View();
         }
+        public ActionResult Samsung2()
+        {
+            return View();
+        }
         public ActionResult AppleIphone()
+        {
+            return View();
+        }
+        public ActionResult AppleIphone2()
         {
             return View();
         }

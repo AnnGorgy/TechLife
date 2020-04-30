@@ -1978,7 +1978,8 @@ if (typeof jQuery === 'undefined') {
 
   var Popover = function (element, options) {
     this.init('popover', element, options)
-  }
+    }
+  
 
   if (!$.fn.tooltip) throw new Error('Popover requires tooltip.js')
 
@@ -2018,7 +2019,7 @@ if (typeof jQuery === 'undefined') {
           content = this.sanitizeHtml(content)
         }
       }
-
+     
       $tip.find('.popover-title').html(title)
       $tip.find('.popover-content').children().detach().end()[
         typeContent === 'string' ? 'html' : 'append'

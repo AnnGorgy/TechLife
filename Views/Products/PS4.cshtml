@@ -2,12 +2,11 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
-                <ul class="breadcrumb" style="margin-top:-25px;">
-
-                    <li><a href="http://localhost:44319/Products">  Products </a></li>
-                    <li><a href="http://localhost:44319/Gaming"> /  Video games </a></li>
-
-                    <li> / PS4 Video games</li>
+                <ul class="breadcrumb"  style="margin-top:-10px;height:43px;">
+                    <li><a href="http://localhost:44319/Products">  Products </a></li> /
+                    <li><a href="http://localhost:44319/Gaming"> Video games </a></li>
+                    /
+                    <li>  PS4 Video games</li>
                 </ul>
 
                 @*<h2 style="margin-top:30px;color:#bb495a;">SmartWatches</h2>*@
@@ -17,9 +16,9 @@
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-3 col-md-3 col-lg-3">
+            <div class="col-sm-4 col-md-4 col-lg-4">
                 <div class="card">
-                    <h4 class="card bg-danger text-center card-header w-100 text-white">Battle Zone</h4>
+                    <h4 class="card bg-danger text-center card-header w-100 text-white">Battle Zone <br />2020</h4>
                     <img src="~/Images/Gaming/PS4/Battle Zone.jpg" class="card-img-top mx-auto d-block" style="height: 200px; margin-top:50px;width:60%;" />
                     <div class="card-body">
                         <h3 class="card-title text-right float-right mb-0 pb-0">Price</h3>
@@ -31,14 +30,34 @@
                         </div>
                         <h5 class="card-text text-right text-danger w-30 h-30"><br />200 L.E</h5>
                         <form action="/Products/VideoGames/PS4" method="post">
-                            <input type="submit" class="btn btn-primary float-right" value="Add To Cart" />
+                            <input type="submit" class="btn btn-primary float-right" value="Add To Cart" /><br /><br />
+                            <!--Button trigger modal -->
+                            <button type="button" class="btn btn-primary float-right" data-toggle="modal" style="margin-left:30px;" data-target="#exampleModalLong"> Details </button>
+                            <!--Modal -->
+                            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" ariahidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body"> ... </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3 col-md-3 col-lg-3">
+            <div class="col-sm-4 col-md-4 col-lg-4">
                 <div class="card">
-                    <h4 class="card bg-danger text-center card-header w-100 text-white">Code Vein</h4>
+                    <h4 class="card bg-danger text-center card-header w-100 text-white">Code Vein <br />2020 </h4>
                     <img src="~/Images/Gaming/PS4/Code Vein.jpg" class="card-img-top mx-auto d-block" style="height: 200px; margin-top:50px;width:60%;" />
                     <div class="card-body">
                         <h3 class="card-title text-right float-right mb-0 pb-0">Price</h3>
@@ -50,14 +69,34 @@
                         </div>
                         <h5 class="card-text text-right text-danger w-30 h-30"><br />300 L.E</h5>
                         <form action="/Products/VideoGames/PS4" method="post">
-                            <input type="submit" class="btn btn-primary float-right" value="Add To Cart" />
+                            <input type="submit" class="btn btn-primary float-right" value="Add To Cart" /><br /><br />
+                            <!--Button trigger modal -->
+                            <button type="button" class="btn btn-primary float-right" data-toggle="modal" style="margin-left:30px;" data-target="#exampleModalLong"> Details </button>
+                            <!--Modal -->
+                            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" ariahidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body"> ... </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3 col-md-3 col-lg-3">
+            <div class="col-sm-4 col-md-4 col-lg-4">
                 <div class="card">
-                    <h4 class="card bg-danger text-center card-header w-100 text-white">Contra Rogue Corps</h4>
+                    <h4 class="card bg-danger text-center card-header w-100 text-white">Contra Rogue Corps<br />2020</h4>
                     <img src="~/Images/Gaming/PS4/Contra Rogue Corps.jpg" class="card-img-top mx-auto d-block" style="height: 200px; margin-top:50px; width:60%;" />
                     <div class="card-body">
                         <h3 class="card-title text-right float-right mb-0 pb-0">Price</h3>
@@ -69,14 +108,34 @@
                         </div>
                         <h5 class="card-text text-right text-danger w-30 h-30"><br />250 L.E</h5>
                         <form action="/Products/VideoGames/PS4" method="post">
-                            <input type="submit" class="btn btn-primary float-right" value="Add To Cart" />
+                            <input type="submit" class="btn btn-primary float-right" value="Add To Cart" /><br /><br />
+                            <!--Button trigger modal -->
+                            <button type="button" class="btn btn-primary float-right" data-toggle="modal" style="margin-left:30px;" data-target="#exampleModalLong"> Details </button>
+                            <!--Modal -->
+                            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" ariahidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body"> ... </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3 col-md-3 col-lg-3">
+            @*<div class="col-sm-3 col-md-3 col-lg-3">
                 <div class="card">
-                    <h4 class="card bg-danger text-center card-header w-100 text-white">eFootball Pro Evolution Soccer 2020</h4>
+                    <h4 class="card bg-danger text-center card-header w-100 text-white">eFootball Pro  <br />2020</h4>
                     <img src="~/Images/Gaming/PS4/eFootball Pro Evolution Soccer 2020.jpg" class="card-img-top mx-auto d-block" style="height: 200px; margin-top:50px; width:60%;" />
                     <div class="card-body">
                         <h3 class="card-title text-right float-right mb-0 pb-0">Price</h3>
@@ -92,7 +151,7 @@
                         </form>
                     </div>
                 </div>
-            </div>
+            </div>*@
         </div>
     </div>
     <nav aria-label="Page navigation example">

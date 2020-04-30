@@ -120,6 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HadilController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\IdentityController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
@@ -137,6 +138,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\About.png" />
+    <Content Include="Images\cart1.png" />
+    <Content Include="Images\cart2.png" />
+    <Content Include="Images\cart3.png" />
     <Content Include="Images\Computers\Gaming Laptops\HP OMEN 17-an101nx Gaming Laptop.jpg" />
     <Content Include="Images\Computers\Gaming Laptops\MSI GT75 Titan 8SG Gaming Laptop.jpg" />
     <Content Include="Images\Computers\Gaming Laptops\Razer Blade 15 Gaming Laptop.jpg" />
@@ -149,6 +154,7 @@
     <Content Include="Images\Customers\person1.jpg" />
     <Content Include="Images\Customers\person2.jpg" />
     <Content Include="Images\Customers\person3.jpg" />
+    <Content Include="Images\Elec_login.jpeg" />
     <Content Include="Images\Gaming\PS4\Battle Zone.jpg" />
     <Content Include="Images\Gaming\PS4\Code Vein.jpg" />
     <Content Include="Images\Gaming\PS4\Contra Rogue Corps.jpg" />
@@ -163,6 +169,7 @@
     <Content Include="Images\Gaming\XBOX\Gears of War 5.jpg" />
     <Content Include="Images\Gaming\XBOX\Need For Speed-Heat.jpg" />
     <Content Include="Images\Gaming\XBOX\Plant vs Zombies Battle for Neighborville.jpg" />
+    <Content Include="Images\Home.png" />
     <Content Include="Images\Home\MB-ksa-2204-dell-g3-laptop-en.jpg" />
     <Content Include="Images\Home\MB-ksa-2204-microsoft-365-en.jpg" />
     <Content Include="Images\Home\MB-ksa-2304-final-fantasy-game-new-en.jpg" />
@@ -184,6 +191,7 @@
     <Content Include="Images\Home\sub-banner-for-web-en-6.jpg" />
     <Content Include="Images\Home\sub-banner-for-web-en-8.jpg" />
     <Content Include="Images\Home\sub-banner-for-web-en-9.jpg" />
+    <Content Include="Images\Login.png" />
     <Content Include="Images\Logo.png" />
     <Content Include="Images\Mobiles\Iphone\11 Pro .jpg" />
     <Content Include="Images\Mobiles\Iphone\Apple iPhone 11 Pro Max.jpg" />
@@ -205,6 +213,7 @@
     <Content Include="Images\Mobiles\Samsung\Samsung Galaxy S20plus.jpg" />
     <Content Include="Images\Mobiles\Samsung\Samsung-Galaxy-Z-Flip %282%29.jpg" />
     <Content Include="Images\Mobiles\Samsung\Samsung-Galaxy-Z-Flip.jpg" />
+    <Content Include="Images\Products.png" />
     <Content Include="Images\Smarttvs\Hisense H65B7100 65-4K Ultra HD DLED Smart TV.jpg" />
     <Content Include="Images\Smarttvs\LG 65UM7340PVA 65-4K Ultra HD LED Smart TV.jpg" />
     <Content Include="Images\Smarttvs\Samsung Q60R 55-4K Ultra HD QLED %28Quantum-dot%29 Smart TV.jpg" />
@@ -259,7 +268,9 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Homepage.cshtml" />
+    <Content Include="Views\Home\Homepage.cshtml">
+      <BrowseToURL>/Home/</BrowseToURL>
+    </Content>
     <Content Include="Views\Products\Smartwatches.cshtml">
       <BrowseToURL>~/Products/SmartWatches</BrowseToURL>
     </Content>
@@ -267,8 +278,8 @@
       <BrowseToURL>~/Products/SmartwatchesPage2</BrowseToURL>
     </Content>
     <Content Include="Views\Shared\_Partiallogin.cshtml" />
-    <Content Include="Views\Identity\login.cshtml">
-      <BrowseToURL>~/login</BrowseToURL>
+    <Content Include="Views\Identity\Login.cshtml">
+      <BrowseToURL>/login</BrowseToURL>
     </Content>
     <Content Include="Views\Products\SmartTelevisions.cshtml" />
     <Content Include="Views\Products\PS4.cshtml">
@@ -296,6 +307,11 @@
     <Content Include="Views\Products\Samsung.cshtml">
       <BrowseToURL>~/Products/MobilePhones/Samsung</BrowseToURL>
     </Content>
+    <Content Include="Views\Hadil\ann1.cshtml">
+      <BrowseToURL>~/gp/ann</BrowseToURL>
+    </Content>
+    <Content Include="Views\Products\AppleIphone2.cshtml" />
+    <Content Include="Views\Products\Samsung2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
