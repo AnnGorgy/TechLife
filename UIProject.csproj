@@ -314,6 +314,7 @@
     <Content Include="Views\Products\AppleIphone2.cshtml" />
     <Content Include="Views\Products\Samsung2.cshtml" />
     <Content Include="Views\Identity\Register.cshtml" />
+    <Content Include="Views\Home\Cart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

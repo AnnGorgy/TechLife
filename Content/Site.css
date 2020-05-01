@@ -4,10 +4,17 @@
     padding-left: 15px;
     padding-right: 15px;
 }
+.container-fluid{
 
+    margin-top:20px;
+}
+.container-Home {
+    margin-top: 60px;
+}
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
+
 .dl-horizontal dt {
     white-space: normal;
 }
@@ -18,23 +25,28 @@ select,
 textarea {
     max-width: 280px;
 }
-
-@media only screen and (max-width: 600px) {
-   
-    .nav-item {
-        margin-right: 1000px;
-        text-align: left;
-    }
+.nav-item {
+    /*margin-right: 1000px;
+        text-align: left;*/
+    padding-left: 50px;
+    padding-top: 20px;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 992px) {
 
     .nav-item {
-        margin-right:1000px;
-        text-align: left;
+        /*margin-right: 1000px;
+        text-align: left;*/
+        margin-right:-200px;
+        margin-right: -200px;
+        padding-top: 5px;
+        width:100px;
+    }
+    .imgspecial {
+        width: 30px;height: 18px; float: left; padding-left: 2px;
     }
 }
+
 
 /* Medium devices (landscape tablets, 768px and up) */
 /*@media only screen and (min-width: 768px) {

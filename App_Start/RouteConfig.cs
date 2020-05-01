@@ -94,6 +94,11 @@ defaults: new { controller = "Products", action = "Laptops" }
                url: "Home/About",
                defaults: new { controller = "Home", action = "About" }
            );
+            routes.MapRoute(
+              name: "Cart",
+              url: "Home/Cart",
+              defaults: new { controller = "Home", action = "Cart" }
+          );
 
 
             routes.MapRoute(
