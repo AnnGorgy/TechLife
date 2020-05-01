@@ -21,10 +21,7 @@ textarea {
 }
 
 @media only screen and (max-width: 600px) {
-    .container-fluid {
-        margin-top: 500px;
-        padding-top:200px
-    }
+   
     .nav-item {
         margin-right: 1000px;
         text-align: left;
@@ -33,10 +30,7 @@ textarea {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 992px) {
-    .container-fluid {
-        margin-top: 500px;
-        padding-top: 200px
-    }
+
     .nav-item {
         margin-right:1000px;
         text-align: left;
