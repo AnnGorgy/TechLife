@@ -102,6 +102,11 @@ defaults: new { controller = "Products", action = "Laptops" }
                defaults: new { controller = "Identity", action = "login" }
            );
             routes.MapRoute(
+              name: "Register",
+              url: "Register",
+              defaults: new { controller = "Identity", action = "Register" }
+          );
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Homepage", id = UrlParameter.Optional }

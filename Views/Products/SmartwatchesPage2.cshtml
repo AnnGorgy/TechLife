@@ -2,8 +2,8 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
-                <ul class="breadcrumb"  style="margin-top:-10px;height:43px;">
-                   
+                <ul class="breadcrumb" style="margin-top:-10px;height:43px;">
+
                     <li><a href="http://localhost:44319/Products">  Products </a></li>
                     /
                     <li>  SmartWatches</li>
@@ -16,17 +16,18 @@
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-4 col-md-4 col-lg-4">
+            <div class="col-sm-12 col-md-4 col-lg-4">
                 <div class="card">
-                    <h4 class="card bg-danger text-center card-header w-100 text-white">Samsung Galaxy Fit e</h4>
+                    <h4 class="card bg-danger text-center card-header w-100 text-white">Samsung Galaxy Fit e Smartwatch</h4>
                     <img src="~/Images/Smartwatches/Samsung Galaxy Fit e.jpg" class="card-img-top mx-auto d-block" style="height: 200px; margin-top:50px;width:60%;" />
                     <div class="card-body">
                         <h3 class="card-title text-right float-right mb-0 pb-0">Price</h3>
                         <h5 class="col px-2">Rate</h5>
                         <div class="btn-group-vertical float-left">
-                            <button type="button" class="btn btn-success">Good</button>
-                            <button type="button" class="btn btn-warning">Okay</button>
-                            <button type="button" class="btn btn-danger">Bad</button>
+                            <button type="button" class="btn btn-success" data-toggle="popover" data-content="Now you can rate Thank you :) ">Good</button>
+                            <button type="button" class="btn btn-warning" data-toggle="popover" data-content="Now you can rate Thank you :)">Okay</button>
+                            <button type="button" class="btn btn-danger" data-toggle="popover" data-content="Now you can rate Thank you :)">Bad</button>
+
                         </div>
                         <h5 class="card-text text-right text-danger w-30 h-30"><br />14000 L.E</h5>
                         <form action="/Home/SmartWatches1" method="post">
@@ -55,7 +56,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 col-md-4 col-lg-4">
+            <div class="col-sm-12 col-md-4 col-lg-4">
                 <div class="card">
                     <h4 class="card bg-danger text-center card-header w-100 text-white">Fitbit Versa Lite Smartwatch</h4>
                     <img src="~/Images/Smartwatches/Fitbit Versa Lite Smartwatch.jpg" class="card-img-top mx-auto d-block" style="height: 200px; margin-top:50px;width:60%;" />
@@ -63,9 +64,10 @@
                         <h3 class="card-title text-right float-right mb-0 pb-0">Price</h3>
                         <h5 class="col px-2">Rate</h5>
                         <div class="btn-group-vertical float-left">
-                            <button type="button" class="btn btn-success">Good</button>
-                            <button type="button" class="btn btn-warning">Okay</button>
-                            <button type="button" class="btn btn-danger">Bad</button>
+                            <button type="button" class="btn btn-success" data-toggle="popover" data-content="Now you can rate Thank you :) ">Good</button>
+                            <button type="button" class="btn btn-warning" data-toggle="popover" data-content="Now you can rate Thank you :)">Okay</button>
+                            <button type="button" class="btn btn-danger" data-toggle="popover" data-content="Now you can rate Thank you :)">Bad</button>
+
                         </div>
                         <h5 class="card-text text-right text-danger w-30 h-30"><br />12000 L.E</h5>
                         <form action="/Home/SmartWatches1" method="post">
@@ -94,7 +96,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 col-md-4 col-lg-4">
+            <div class="col-sm-12 col-md-4 col-lg-4">
                 <div class="card">
                     <h4 class="card bg-danger text-center card-header w-100 text-white">Fitbit Versa Lite Smartwatch 5</h4>
                     <img src="~/Images/Smartwatches/Fitbit Versa Lite Smartwatch (2).jpg" class="card-img-top mx-auto d-block" style="height: 200px; margin-top:50px; width:60%;" />
@@ -102,9 +104,10 @@
                         <h3 class="card-title text-right float-right mb-0 pb-0">Price</h3>
                         <h5 class="col px-2">Rate</h5>
                         <div class="btn-group-vertical float-left">
-                            <button type="button" class="btn btn-success">Good</button>
-                            <button type="button" class="btn btn-warning">Okay</button>
-                            <button type="button" class="btn btn-danger">Bad</button>
+                            <button type="button" class="btn btn-success" data-toggle="popover" data-content="Now you can rate Thank you :) ">Good</button>
+                            <button type="button" class="btn btn-warning" data-toggle="popover" data-content="Now you can rate Thank you :)">Okay</button>
+                            <button type="button" class="btn btn-danger" data-toggle="popover" data-content="Now you can rate Thank you :)">Bad</button>
+
                         </div>
                         <h5 class="card-text text-right text-danger w-30 h-30"><br />12000 L.E</h5>
                         <form action="/Home/SmartWatches1" method="post">
@@ -135,13 +138,25 @@
             </div>
         </div>
     </div>
-    <nav aria-label="Page navigation example">
-        <ul class="pagination" style="margin-left:450px;margin-top:2px">
-            <li class="page-item"><a class="page-link" href="https://localhost:44319/Products/SmartWatches">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="https://localhost:44319/Products/SmartWatches">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-        </ul>
-    </nav>
+    <div class="nav-scroller py-1 mb-2">
+        <nav class="nav d-flex justify-content-center">
+            <ul class="pagination pagination-sm flex-sm-wrap">
+                <li class="page-item"><a class="page-link" href="https://localhost:44319/Products/SmartWatches">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="https://localhost:44319/Products/SmartWatches">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="~/bootstrap.bundle.min.js"></script>
+    <script src="~/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover({trigger : 'hover'});
+        });
 
+    </script>
 </body>

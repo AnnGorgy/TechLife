@@ -10,7 +10,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
-                <ul class="breadcrumb"  style="margin-top:-10px;height:43px;">
+                <ul class="breadcrumb" style="margin-top:-10px;height:43px;">
 
                     <li><a href="http://localhost:44319/Products">  Products </a></li>/
                     <li><a href="http://localhost:44319/Gaming">   Video games </a></li>
@@ -25,7 +25,7 @@
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-4 col-md-4 col-lg-4">
+            <div class="col-sm-12 col-md-4 col-lg-4">
                 <div class="card">
                     <h4 class="card bg-danger text-center card-header w-100 text-white">Gears of War 5</h4>
                     <img src="~/Images/Gaming/XBOX/Gears of War 5.jpg" class="card-img-top mx-auto d-block" style="height: 200px; margin-top:50px;width:60%;" />
@@ -33,9 +33,10 @@
                         <h3 class="card-title text-right float-right mb-0 pb-0">Price</h3>
                         <h5 class="col px-2">Rate</h5>
                         <div class="btn-group-vertical float-left">
-                            <button type="button" class="btn btn-success">Good</button>
-                            <button type="button" class="btn btn-warning">Okay</button>
-                            <button type="button" class="btn btn-danger" >Bad</button>
+                            <button type="button" class="btn btn-success" data-toggle="popover" data-content="Now you can rate Thank you :) ">Good</button>
+                            <button type="button" class="btn btn-warning" data-toggle="popover" data-content="Now you can rate Thank you :)">Okay</button>
+                            <button type="button" class="btn btn-danger" data-toggle="popover" data-content="Now you can rate Thank you :)">Bad</button>
+
                         </div>
                         <h5 class="card-text text-right text-danger w-30 h-30"><br />200 L.E</h5>
                         <form action="/Products/VideoGames/XBOX" method="post">
@@ -64,7 +65,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 col-md-4 col-lg-4">
+            <div class="col-sm-12 col-md-4 col-lg-4">
                 <div class="card">
                     <h4 class="card bg-danger text-center card-header w-100 text-white">Forza 7 Motorsport</h4>
                     <img src="~/Images/Gaming/XBOX/Forza 7 Motorsport Ultimate Edition.jpg" class="card-img-top mx-auto d-block" style="height: 200px; margin-top:50px;width:60%;" />
@@ -72,9 +73,10 @@
                         <h3 class="card-title text-right float-right mb-0 pb-0">Price</h3>
                         <h5 class="col px-2">Rate</h5>
                         <div class="btn-group-vertical float-left">
-                            <button type="button" class="btn btn-success">Good</button>
-                            <button type="button" class="btn btn-warning">Okay</button>
-                            <button type="button" class="btn btn-danger">Bad</button>
+                            <button type="button" class="btn btn-success" data-toggle="popover" data-content="Now you can rate Thank you :) ">Good</button>
+                            <button type="button" class="btn btn-warning" data-toggle="popover" data-content="Now you can rate Thank you :)">Okay</button>
+                            <button type="button" class="btn btn-danger" data-toggle="popover" data-content="Now you can rate Thank you :)">Bad</button>
+
                         </div>
                         <h5 class="card-text text-right text-danger w-30 h-30"><br />350 L.E</h5>
                         <form action="/Products/VideoGames/XBOX" method="post">
@@ -103,7 +105,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 col-md-4 col-lg-4">
+            <div class="col-sm-12 col-md-4 col-lg-4">
                 <div class="card">
                     <h4 class="card bg-danger text-center card-header w-100 text-white">Plant vs Zombies Battle </h4>
                     <img src="~/Images/Gaming/XBOX/Plant vs Zombies Battle for Neighborville.jpg" class="card-img-top mx-auto d-block" style="height: 200px; margin-top:50px; width:60%;" />
@@ -111,9 +113,10 @@
                         <h3 class="card-title text-right float-right mb-0 pb-0">Price</h3>
                         <h5 class="col px-2">Rate</h5>
                         <div class="btn-group-vertical float-left">
-                            <button type="button" class="btn btn-success">Good</button>
-                            <button type="button" class="btn btn-warning">Okay</button>
-                            <button type="button" class="btn btn-danger">Bad</button>
+                            <button type="button" class="btn btn-success" data-toggle="popover" data-content="Now you can rate Thank you :) ">Good</button>
+                            <button type="button" class="btn btn-warning" data-toggle="popover" data-content="Now you can rate Thank you :)">Okay</button>
+                            <button type="button" class="btn btn-danger" data-toggle="popover" data-content="Now you can rate Thank you :)">Bad</button>
+
                         </div>
                         <h5 class="card-text text-right text-danger w-30 h-30"><br />250 L.E</h5>
                         <form action="/Products/VideoGames/XBOX" method="post">
@@ -145,13 +148,28 @@
 
         </div>
     </div>
-    <nav aria-label="Page navigation example">
-        <ul class="pagination" style="margin-left:450px;margin-top:2px">
-            <li class="page-item"><a class="page-link" href="https://localhost:44319/Products/VideoGames/XBOX">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="https://localhost:44319/Products/VideoGames/XBOX">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-        </ul>
-    </nav>
+    <div class="nav-scroller py-1 mb-2">
+        <nav class="nav d-flex justify-content-center">
+            <ul class="pagination pagination-sm flex-sm-wrap">
+                <li class="page-item"><a class="page-link" href="https://localhost:44319/Products/VideoGames/XBOX">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="https://localhost:44319/Products/VideoGames/XBOX">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>
+    </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="~/bootstrap.bundle.min.js"></script>
+    <script src="~/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+   
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover({trigger : 'hover'});
+        });
+
+    </script>
 </body>

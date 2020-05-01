@@ -2,8 +2,7 @@
 
 
 
-    <button type="button" class="btn btn-lg btn-danger" style="margin-bottom:50px;" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
-
+   
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
@@ -91,9 +90,9 @@
                         <h3 class="card-title text-right float-right mb-0 pb-0">Price</h3>
                         <h5 class="col px-2">Rate</h5>
                         <div class="btn-group-vertical float-left">
-                            <button type="button" class="btn btn-success">Good</button>
-                            <button type="button" class="btn btn-warning">Okay</button>
-                            <button type="button" class="btn btn-danger">Bad</button>
+                            <button type="button" class="btn btn-success" data-toggle="popover" data-content="Now you can rate Thank you :) ">Good</button>
+                            <button type="button" class="btn btn-warning" data-toggle="popover" data-content="Now you can rate Thank you :)">Okay</button>
+                            <button type="button" class="btn btn-danger" data-toggle="popover" data-content="Now you can rate Thank you :)">Bad</button>
                         </div>
                         <h5 class="card-text text-right text-danger w-30 h-30"><br />12000 L.E</h5>
                         <form action="/Products/MobilePhones/Iphone" method="post">
@@ -131,9 +130,10 @@
                         <h3 class="card-title text-right float-right mb-0 pb-0">Price</h3>
                         <h5 class="col px-2">Rate</h5>
                         <div class="btn-group-vertical float-left">
-                            <button type="button" class="btn btn-success">Good</button>
-                            <button type="button" class="btn btn-warning">Okay</button>
-                            <button type="button" class="btn btn-danger">Bad</button>
+                            <button type="button" class="btn btn-success" data-toggle="popover" data-content="Now you can rate Thank you :) ">Good</button>
+                            <button type="button" class="btn btn-warning" data-toggle="popover" data-content="Now you can rate Thank you :)">Okay</button>
+                            <button type="button" class="btn btn-danger" data-toggle="popover" data-content="Now you can rate Thank you :)">Bad</button>
+
                         </div>
                         <h5 class="card-text text-right text-danger w-30 h-30"><br />14000 L.E</h5>
                         <form action="/Products/MobilePhones/Iphone" method="post">
@@ -171,9 +171,10 @@
                         <h3 class="card-title text-right float-right mb-0 pb-0">Price</h3>
                         <h5 class="col px-2">Rate</h5>
                         <div class="btn-group-vertical float-left">
-                            <button type="button" class="btn btn-success">Good</button>
-                            <button type="button" class="btn btn-warning">Okay</button>
-                            <button type="button" class="btn btn-danger">Bad</button>
+                            <button type="button" class="btn btn-success" data-toggle="popover" data-content="Now you can rate Thank you :) ">Good</button>
+                            <button type="button" class="btn btn-warning" data-toggle="popover" data-content="Now you can rate Thank you :)">Okay</button>
+                            <button type="button" class="btn btn-danger" data-toggle="popover" data-content="Now you can rate Thank you :)">Bad</button>
+
                         </div>
                         <h5 class="card-text text-right text-danger w-30 h-30"><br />16000 L.E</h5>
                         <form action="/Products/MobilePhones/Iphone" method="post">
@@ -245,14 +246,25 @@
                 </div>*@
     </div>
 
-    <nav aria-label="Page navigation example">
+    <div class="nav-scroller py-1 mb-2"> 
+        <nav class="nav d-flex justify-content-center"> 
+            <ul class="pagination pagination-sm flex-sm-wrap">
+                <li class="page-item"><a class="page-link" href="https://localhost:44319/Products/MobilePhones/AppleIphone">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="https://localhost:44319/Products/MobilePhones/AppleIphone">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul> 
+        </nav> 
+    </div>
+
+    @*<nav aria-label="Page navigation example">
         <ul class="pagination" style="margin-left:450px;margin-top:2px">
             <li class="page-item"><a class="page-link" href="https://localhost:44319/Products/MobilePhones/AppleIphone">Previous</a></li>
             <li class="page-item"><a class="page-link" href="https://localhost:44319/Products/MobilePhones/AppleIphone">1</a></li>
             <li class="page-item"><a class="page-link" href="#">2</a></li>
             <li class="page-item"><a class="page-link" href="#">Next</a></li>
         </ul>
-    </nav>
+    </nav>*@
     @*<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
                 integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
                 crossorigin="anonymous"></script>
@@ -266,7 +278,9 @@
     <script src="~/bootstrap.min.js"></script>
     <script>
         $(function () {
-            $('[data-toggle="popover"]').popover();
+            $('[data-toggle="popover"]').popover({trigger : 'hover'});
         });
+       
     </script>
+
 </body>

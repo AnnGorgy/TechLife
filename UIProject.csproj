@@ -214,6 +214,7 @@
     <Content Include="Images\Mobiles\Samsung\Samsung-Galaxy-Z-Flip %282%29.jpg" />
     <Content Include="Images\Mobiles\Samsung\Samsung-Galaxy-Z-Flip.jpg" />
     <Content Include="Images\Products.png" />
+    <Content Include="Images\Register.png" />
     <Content Include="Images\Smarttvs\Hisense H65B7100 65-4K Ultra HD DLED Smart TV.jpg" />
     <Content Include="Images\Smarttvs\LG 65UM7340PVA 65-4K Ultra HD LED Smart TV.jpg" />
     <Content Include="Images\Smarttvs\Samsung Q60R 55-4K Ultra HD QLED %28Quantum-dot%29 Smart TV.jpg" />
@@ -312,6 +313,7 @@
     </Content>
     <Content Include="Views\Products\AppleIphone2.cshtml" />
     <Content Include="Views\Products\Samsung2.cshtml" />
+    <Content Include="Views\Identity\Register.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
